@@ -7,7 +7,7 @@ from pyrevit.loader import sessionmgr
 from pyrevit.loader import sessioninfo
 
 import subprocess
-subprocess.call([r"%appdata%\pyRevit\MiTek.extension\MiTek.tab\System.panel\Reload.pushbutton\Reload MiTek Extension.bat"])
+subprocess.call(["cmd", "/c", "pyrevit extensions update MiTek"])
 
 res = True
 
