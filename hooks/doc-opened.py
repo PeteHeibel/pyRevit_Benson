@@ -2,7 +2,8 @@ from pyrevit import revit, DB, HOST_APP
 import os
 
 import sys
-sys.path.append(r"C:\Users\723150\AppData\Roaming\pyRevit\Extensions\MiTek.extension")
+import os
+sys.path.append(os.path.expandvars("%appdata%\pyRevit\Extensions\MiTek.extension"))
 from mitek import latest_version 
 
 revit_version = HOST_APP.version
