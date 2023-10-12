@@ -1,12 +1,11 @@
 """Reload pyRevit into new session."""
-# -*- coding=utf-8 -*-
-#pylint: disable=import-error,invalid-name,broad-except
-from pyrevit import EXEC_PARAMS
+
 from pyrevit import script
 from pyrevit.loader import sessionmgr
 from pyrevit.loader import sessioninfo
 
 import subprocess
+subprocess.call(["echo", "Updating 'MiTek' Revit addin..."])
 subprocess.call(["cmd", "/c", "pyrevit extensions update MiTek"])
 
 res = True
