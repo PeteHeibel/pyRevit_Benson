@@ -1,18 +1,5 @@
-import pyrevit
-from pyrevit import revit, DB
+from pyrevit import HOST_APP, UI
 
-try:
-    # Access the current Revit document
-    doc = revit.doc
+uiapp = HOST_APP.uiapp
 
-    # Get the Revit application
-    app = doc.Application
-
-    # Find the Dynamo Player command ID
-    command_id = app.LookupCommandId("ID_PLAYLIST_DYNAMO")
-
-    # Execute the command
-    app.PostCommand(command_id)
-
-except Exception as e:
-    pyrevit.report_error("Error launching Dynamo Player:", e)  # Use PyRevit's error reporting
+uiapp.PostCommand(UI.RevitCommandId.LookupCommandId("ID_PLAYLIST_DYNAMO"))
