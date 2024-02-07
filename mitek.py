@@ -10,7 +10,7 @@ def latest_version(revit_version):
     elif revit_version == '2023':
         return '2023.1.30'
     elif revit_version == '2024':
-        return '2024.1.0'
+        return '2024.2'
     else:
         warning = 'Revit {} is not supported at MiTek. Please upgrade.'.format(revit_version)
         return warning
