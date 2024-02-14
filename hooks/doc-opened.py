@@ -3,8 +3,8 @@ import os
 
 import sys
 import os
-sys.path.append(os.path.expandvars("%appdata%\pyRevit\Extensions\MiTek.extension"))
-from mitek import latest_version 
+sys.path.append(os.path.expandvars("%appdata%\pyRevit\Extensions\Benson.extension"))
+from benson import latest_version 
 
 revit_version = HOST_APP.version
 revit_subversion = HOST_APP.subversion
