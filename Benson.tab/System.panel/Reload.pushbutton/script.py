@@ -5,7 +5,7 @@ from pyrevit.loader import sessionmgr
 from pyrevit.loader import sessioninfo
 
 import subprocess
-subprocess.call(["cmd", "/c", "pyrevit extensions update MiTek"])
+subprocess.call(["cmd", "/c", "pyrevit extensions update Benson"])
 
 res = True
 
