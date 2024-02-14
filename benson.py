@@ -1,4 +1,4 @@
-"""list of functions used in MiTek Revit addins"""
+"""list of functions used in Benson Revit addins"""
 
 
 def latest_version(revit_version):
@@ -12,5 +12,5 @@ def latest_version(revit_version):
     elif revit_version == '2024':
         return '2024.2'
     else:
-        warning = 'Revit {} is not supported at MiTek. Please upgrade.'.format(revit_version)
+        warning = 'Revit {} is not supported at Benson. Please upgrade.'.format(revit_version)
         return warning
