@@ -5,14 +5,14 @@ from pyrevit import coreutils, HOST_APP, forms
 
 import sys
 import os
-sys.path.append(os.path.expandvars("%appdata%\pyRevit\Extensions\MiTek.extension"))
-from mitek import latest_version 
+sys.path.append(os.path.expandvars("%appdata%\pyRevit\Extensions\Benson.extension"))
+from benson import latest_version 
 
 revit_version = HOST_APP.version
 revit_subversion = HOST_APP.subversion
 forms.toaster.get_toaster()
 sharePoint_site = 'https://mitek.sharepoint.com/sites/CustomCurtainwallTraining/SitePages/Revit-Training/001_Revit-Installation-Configuration.aspx'
-revit_icon = r"%appdata%\pyRevit\Extensions\MiTek.extension\images\Revit Icon.png"
+revit_icon = r"%appdata%\pyRevit\Extensions\Benson.extension\images\Revit Icon.png"
     
 if revit_subversion == latest_version(revit_version):
     message = 'You are running the latest version of Revit: ' + revit_subversion
