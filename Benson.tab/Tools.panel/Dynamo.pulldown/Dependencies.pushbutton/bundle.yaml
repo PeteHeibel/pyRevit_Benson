@@ -1,1 +1,10 @@
-tooltip: Download all Benson Dynamo dependencies.
+tooltip: >-
+  Download all Benson Dynamo dependencies.
+
+
+  NOTES: 
+
+  - If Dynamo dependencies have already been downloaded, only new or updated files will be downloaded. 
+
+  - If this is your first time downloading Dynamo dependencies, this command may take several minutes to complete depending on your network connection.
+context: zero-doc
