@@ -4,3 +4,5 @@ title:
   Revit
 tooltip: "Check to see if you are running the latest version of Revit."
 context: zero-doc
+help_url: >-
+  https://mitek.sharepoint.com/sites/CustomCurtainwallTraining/SitePages/Revit-Training/001_Revit-Installation-Configuration.aspx#install-update-via-autodesk-access
