@@ -1,14 +1,22 @@
-"""Opens the Revit 'Collaboration Cache' folder in File Explorer"""
+# -*- coding: utf-8 -*-
+# script metadata
+__title__   = 'Collaboration Cache'
+__doc__     = "Opens the Revit 'Collaboration Cache' folder in File Explorer"
+__author__  = 'Pete Heibel'
+__min_revit_year__  = 2021
+__max_revit_year__  = 2024
 
+# imports
 import os
 from pyrevit import revit, coreutils, HOST_APP, forms
 
+# variables
 doc = revit.doc
-
 local_app_data = os.getenv('LOCALAPPDATA')
 revit_version = str(HOST_APP.version)
 collaboration_cache_path = local_app_data + "\Autodesk\Revit\Autodesk Revit " + revit_version + "\CollaborationCache"
 
+# main
 try:
     # if the active document is saved in the cloud, open the project guid folder
     cloud_file_path = doc.GetCloudModelPath()

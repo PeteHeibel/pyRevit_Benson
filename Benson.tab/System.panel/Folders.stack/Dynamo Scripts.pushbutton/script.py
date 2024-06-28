@@ -9,7 +9,6 @@ __context__ = 'zero-doc'
 
 # imports
 import os
-import pyrevit
 from pyrevit import coreutils, forms
 
 # variables
@@ -19,4 +18,4 @@ path = "K:\Revit Standards\Dynamo\Scripts"
 if os.path.exists(path):
     coreutils.open_folder_in_explorer(path)
 else:
-    pyrevit.forms.alert("K: drive not connected. Folder could not be opened.", "Error")
+    forms.alert("K: drive not connected. Folder could not be opened.", "Error")
