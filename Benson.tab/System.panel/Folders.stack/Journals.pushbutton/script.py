@@ -3,8 +3,8 @@
 __title__   = 'Journals'
 __doc__     = "Opens the Revit journals folder for current user"
 __author__  = 'Pete Heibel'
-__min_revit_year__  = 2021
-__max_revit_year__  = 2024
+__min_revit_ver__  = 2021
+__max_revit_ver__  = 2024
 __context__ = 'zero-doc'
 
 # imports
