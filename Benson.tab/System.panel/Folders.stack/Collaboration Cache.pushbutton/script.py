@@ -5,6 +5,7 @@ __doc__     = "Opens the Revit 'Collaboration Cache' folder in File Explorer"
 __author__  = 'Pete Heibel'
 __min_revit_year__  = 2021
 __max_revit_year__  = 2024
+__context__ = 'zero-doc'
 
 # imports
 import os
