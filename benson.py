@@ -1,5 +1,10 @@
-"""list of functions used in Benson Revit addins"""
+"""global variables and functions used in Benson Revit addins"""
 
+# imports
+
+# variables
+
+# functions
 def latest_version(revit_version):
     if revit_version == '2021':
         return '2021.2'
